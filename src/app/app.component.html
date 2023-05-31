@@ -1,0 +1,23 @@
+<div > 
+    <div style="position: absolute;" class="options" >
+        <label> xy</label>
+        <input type="number"min="0"max="10"step="1" [(ngModel)]="xy" value="3">
+        <label> xz</label>
+        <input type="number"min="0"max="10"step="1" [(ngModel)]="xz" value="3">
+        <label> xw</label>
+        <input type="number"min="0"max="10"step="1" [(ngModel)]="xw" value="3">
+        <label> yz</label>
+        <input type="number"min="0"max="10"step="1" [(ngModel)]="yz" value="3">
+        <label> yw</label>
+        <input type="number"min="0"max="10"step="1" [(ngModel)]="yw" value="3">
+        <label> zw</label>
+        <input type="number"min="0"max="10"step="1" [(ngModel)]="zw" value="3">
+        <label> bias</label>
+        <input type="number"min="0.1"max="10"step="0.1" [(ngModel)]="bias" value="3">
+        <input type="button" (click)="cubeReset()" value="重置" >
+        <input type="button" (click)="Changecube()" [value]="cubeGo? '暂停':'开始'" >
+    </div>
+    
+
+
+</div>
